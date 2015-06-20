@@ -2,16 +2,21 @@
 A different kind of clock. News, meetings, & world time while you work or play.
 
 ## View Structure
-`TKTickViewController` : `UIScrollViewController` (vertical)
-- `TKUpdateViewController` : `UIScrollViewController` (horizontal)
- - `TKUpdateView` : `UIView`
-- `TKClockViewController` : `UIScrollViewController` (horizontal)
- - `TKClocksView` : `UIView`
- - `TKClockView` : `UIView`
-- `TKClockMetaView` : `UIView`
+`TKTickViewController` : `UIScrollViewController<TKClockworkStyleable>` (vertical)
+- `TKUpdateViewController` : `UIScrollViewController<TKClockworkStyleable>` (horizontal)
+ - `TKUpdateView` : `UIView<TKClockworkStyleable>`
+- `TKClockViewController` : `UIScrollViewController<TKClockworkStyleable>` (horizontal)
+ - `TKClocksView` : `UIView<TKClockworkStyleable>`
+ - `TKClockView` : `UIView<TKClockworkStyleable>`
+- `TKClockMetaView` : `UIView<TKClockworkStyleable>`
 
 
 ## Backend
+
+### `TKClockwork`
+Styling manager dependency-injected into every custom view.
+
+- Defines `@protocol TKClockworkStyleable`
 
 ### `TKQuartz`
 Single UITimer broadcasting to all time-interval-watching objects app-wide
@@ -23,6 +28,29 @@ Single UITimer broadcasting to all time-interval-watching objects app-wide
 ### `TKClock`
 - Represents a single clock object
 - Given by TKClockStore and consumed by TKClockView
+
+
+## Custom Object Structure
+
+### `TKClockworkStyle`
+
+- Style Title : `NSString`
+- Primary Color : `UIColor`
+- Accent Color : `UIColor`
+- Secondhand Color : `UIColor`
+
+### `TKClock` (WIP)
+
+- Clock Title : `NSString`
+- Time Zone : `NSTimeZone`
+- Location : `CLLocation`
+- Weather : `TKWeather`
+
+### `TKWeather` (WIP)
+
+- Current Conditions Title : `NSString`
+- Current Conditions Temperature : `NSNumber` (int)
+- Current Conditions Icon : `UIImage`
 
 
 ## Open Source Components
