@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Izuchukwu Elechi. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "TKAppDelegate.h"
 
-@interface AppDelegate ()
+@interface TKAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation TKAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

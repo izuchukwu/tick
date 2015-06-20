@@ -11,28 +11,28 @@ A different kind of clock. News, meetings, & world time while you work or play.
 - `TKClockMetaView` : `UIView<TKClockworkStyleable>`
 
 
-## Backend
+## Core
 
-### `TKClockwork`
+### `TKClockwork` (WIP)
 Styling manager dependency-injected into every custom view.
 
 - Defines `@protocol TKClockworkStyleable`
 
-### `TKQuartz`
+### `TKQuartz` (WIP)
 Single UITimer broadcasting to all time-interval-watching objects app-wide
 
-### `TKClockStore`
+### `TKClockStore` (WIP)
 - Database of all clocks & time zones
 - User’s clocks
 
-### `TKClock`
+### `TKClock` (WIP)
 - Represents a single clock object
 - Given by TKClockStore and consumed by TKClockView
 
 
 ## Custom Object Structure
 
-### `TKClockworkStyle`
+### `TKClockworkStyle` [Complete]
 
 - Style Title : `NSString`
 - Primary Color : `UIColor`

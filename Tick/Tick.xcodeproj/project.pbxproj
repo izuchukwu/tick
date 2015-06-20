@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		866100731B352D63002653BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100721B352D63002653BD /* main.m */; };
-		866100761B352D63002653BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100751B352D63002653BD /* AppDelegate.m */; };
+		866100761B352D63002653BD /* TKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100751B352D63002653BD /* TKAppDelegate.m */; };
 		866100791B352D63002653BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100781B352D63002653BD /* ViewController.m */; };
 		8661007C1B352D63002653BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8661007A1B352D63002653BD /* Main.storyboard */; };
 		8661007E1B352D63002653BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8661007D1B352D63002653BD /* Images.xcassets */; };
 		866100811B352D63002653BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8661007F1B352D63002653BD /* LaunchScreen.xib */; };
 		8661008D1B352D63002653BD /* TickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8661008C1B352D63002653BD /* TickTests.m */; };
+		86D84CEC1B35E29F00C36B57 /* TKClockwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CEB1B35E29F00C36B57 /* TKClockwork.m */; };
+		86D84CEF1B35E2C500C36B57 /* TKClockworkStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +32,8 @@
 		8661006D1B352D63002653BD /* Tick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		866100711B352D63002653BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		866100721B352D63002653BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		866100741B352D63002653BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		866100751B352D63002653BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		866100741B352D63002653BD /* TKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKAppDelegate.h; sourceTree = "<group>"; };
+		866100751B352D63002653BD /* TKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKAppDelegate.m; sourceTree = "<group>"; };
 		866100771B352D63002653BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		866100781B352D63002653BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8661007B1B352D63002653BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +42,10 @@
 		866100861B352D63002653BD /* TickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8661008B1B352D63002653BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8661008C1B352D63002653BD /* TickTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TickTests.m; sourceTree = "<group>"; };
+		86D84CEA1B35E29F00C36B57 /* TKClockwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKClockwork.h; path = Core/TKClockwork.h; sourceTree = "<group>"; };
+		86D84CEB1B35E29F00C36B57 /* TKClockwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKClockwork.m; path = Core/TKClockwork.m; sourceTree = "<group>"; };
+		86D84CED1B35E2C500C36B57 /* TKClockworkStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKClockworkStyle.h; path = Core/TKClockworkStyle.h; sourceTree = "<group>"; };
+		86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKClockworkStyle.m; path = Core/TKClockworkStyle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				8661006F1B352D63002653BD /* Tick */,
-				866100891B352D63002653BD /* TickTests */,
-				8661006E1B352D63002653BD /* Products */,
+				866100701B352D63002653BD /* Supporting */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,30 +81,31 @@
 				866100861B352D63002653BD /* TickTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		8661006F1B352D63002653BD /* Tick */ = {
 			isa = PBXGroup;
 			children = (
-				866100741B352D63002653BD /* AppDelegate.h */,
-				866100751B352D63002653BD /* AppDelegate.m */,
-				866100771B352D63002653BD /* ViewController.h */,
-				866100781B352D63002653BD /* ViewController.m */,
-				8661007A1B352D63002653BD /* Main.storyboard */,
-				8661007D1B352D63002653BD /* Images.xcassets */,
-				8661007F1B352D63002653BD /* LaunchScreen.xib */,
-				866100701B352D63002653BD /* Supporting Files */,
+				866100741B352D63002653BD /* TKAppDelegate.h */,
+				866100751B352D63002653BD /* TKAppDelegate.m */,
+				86D84CE91B35E26E00C36B57 /* Launch */,
+				86D84CE81B35E25F00C36B57 /* Core */,
+				86D84CE71B35E23500C36B57 /* Assets */,
 			);
 			path = Tick;
 			sourceTree = "<group>";
 		};
-		866100701B352D63002653BD /* Supporting Files */ = {
+		866100701B352D63002653BD /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				866100891B352D63002653BD /* TickTests */,
+				8661006E1B352D63002653BD /* Products */,
 				866100711B352D63002653BD /* Info.plist */,
 				866100721B352D63002653BD /* main.m */,
 			);
-			name = "Supporting Files";
+			name = Supporting;
+			path = Tick;
 			sourceTree = "<group>";
 		};
 		866100891B352D63002653BD /* TickTests */ = {
@@ -109,7 +115,7 @@
 				8661008A1B352D63002653BD /* Supporting Files */,
 			);
 			path = TickTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		8661008A1B352D63002653BD /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -117,6 +123,36 @@
 				8661008B1B352D63002653BD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86D84CE71B35E23500C36B57 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8661007D1B352D63002653BD /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		86D84CE81B35E25F00C36B57 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				86D84CEA1B35E29F00C36B57 /* TKClockwork.h */,
+				86D84CEB1B35E29F00C36B57 /* TKClockwork.m */,
+				86D84CED1B35E2C500C36B57 /* TKClockworkStyle.h */,
+				86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		86D84CE91B35E26E00C36B57 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				866100771B352D63002653BD /* ViewController.h */,
+				866100781B352D63002653BD /* ViewController.m */,
+				8661007A1B352D63002653BD /* Main.storyboard */,
+				8661007F1B352D63002653BD /* LaunchScreen.xib */,
+			);
+			name = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,8 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				866100791B352D63002653BD /* ViewController.m in Sources */,
-				866100761B352D63002653BD /* AppDelegate.m in Sources */,
+				866100761B352D63002653BD /* TKAppDelegate.m in Sources */,
+				86D84CEC1B35E29F00C36B57 /* TKClockwork.m in Sources */,
 				866100731B352D63002653BD /* main.m in Sources */,
+				86D84CEF1B35E2C500C36B57 /* TKClockworkStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

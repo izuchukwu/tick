@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "TKClockwork.h"
+
+@interface TKAppDelegate : UIResponder <UIApplicationDelegate, TKClockworkAuthority>
 
 @property (strong, nonatomic) UIWindow *window;
 
