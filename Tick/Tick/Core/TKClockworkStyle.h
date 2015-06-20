@@ -14,8 +14,13 @@
 @property (nonatomic, copy, readonly) NSString *title;
 @property (nonatomic, strong, readonly) UIColor *primaryColor;
 @property (nonatomic, strong, readonly) UIColor *accentColor;
+@property (nonatomic, strong, readonly) UIColor *backgroundColor;
 @property (nonatomic, strong, readonly) UIColor *secondhandColor;
 
-- (instancetype)initWithTitle:(NSString *)title primaryColor:(UIColor *)primaryColor accentColor:(UIColor *)accentColor secondhandColor:(UIColor *)secondhandColor;
+- (instancetype)initWithTitle:(NSString *)title primaryColor:(UIColor *)primaryColor accentColor:(UIColor *)accentColor backgroundColor:(UIColor *)backgroundColor secondhandColor:(UIColor *)secondhandColor;
+
+// Defaults
+
++ (NSArray *)defaults;
 
 @end

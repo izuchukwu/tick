@@ -13,13 +13,13 @@ A different kind of clock. News, meetings, & world time while you work or play.
 
 ## Core
 
-### `TKClockwork` (WIP)
+### `TKClockwork` [Complete]
 Styling manager dependency-injected into every custom view.
 
 - Defines `@protocol TKClockworkStyleable`
 
-### `TKQuartz` (WIP)
-Single UITimer broadcasting to all time-interval-watching objects app-wide
+### `TKQuartz` [Complete]
+Single NSTimer broadcasting to all time-interval-watching objects app-wide, notifying them to update their timekeeping.
 
 ### `TKClockStore` (WIP)
 - Database of all clocks & time zones

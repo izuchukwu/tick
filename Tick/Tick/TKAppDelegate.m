@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self initClockwork];
+    [self initQuartz]
     return YES;
 }
 
@@ -40,6 +42,18 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Clockwork & Quartz
+
+- (void)initQuartz {
+    self.quartz = [[TKQuartz alloc] init];
+    [self.quartz beginResonation];
+}
+
+- (void)initClockwork {
+    self.clockwork = [[TKClockwork alloc] init];
+    [self.clockwork restyleApplicationWithAuthenticatedObject:self style:[TKClockworkStyle defaults][0]];
 }
 
 @end

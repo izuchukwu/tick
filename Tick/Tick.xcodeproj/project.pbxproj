@@ -16,6 +16,7 @@
 		8661008D1B352D63002653BD /* TickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8661008C1B352D63002653BD /* TickTests.m */; };
 		86D84CEC1B35E29F00C36B57 /* TKClockwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CEB1B35E29F00C36B57 /* TKClockwork.m */; };
 		86D84CEF1B35E2C500C36B57 /* TKClockworkStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */; };
+		86D84CF21B35F82400C36B57 /* TKQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CF11B35F82400C36B57 /* TKQuartz.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		86D84CEB1B35E29F00C36B57 /* TKClockwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKClockwork.m; path = Core/TKClockwork.m; sourceTree = "<group>"; };
 		86D84CED1B35E2C500C36B57 /* TKClockworkStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKClockworkStyle.h; path = Core/TKClockworkStyle.h; sourceTree = "<group>"; };
 		86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKClockworkStyle.m; path = Core/TKClockworkStyle.m; sourceTree = "<group>"; };
+		86D84CF01B35F82400C36B57 /* TKQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKQuartz.h; path = Core/TKQuartz.h; sourceTree = "<group>"; };
+		86D84CF11B35F82400C36B57 /* TKQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKQuartz.m; path = Core/TKQuartz.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				86D84CEB1B35E29F00C36B57 /* TKClockwork.m */,
 				86D84CED1B35E2C500C36B57 /* TKClockworkStyle.h */,
 				86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */,
+				86D84CF01B35F82400C36B57 /* TKQuartz.h */,
+				86D84CF11B35F82400C36B57 /* TKQuartz.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				866100791B352D63002653BD /* ViewController.m in Sources */,
+				86D84CF21B35F82400C36B57 /* TKQuartz.m in Sources */,
 				866100761B352D63002653BD /* TKAppDelegate.m in Sources */,
 				86D84CEC1B35E29F00C36B57 /* TKClockwork.m in Sources */,
 				866100731B352D63002653BD /* main.m in Sources */,
