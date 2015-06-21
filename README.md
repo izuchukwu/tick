@@ -29,7 +29,7 @@ Queryable database of all clocks & time zones, plus user's selected clocks, depe
 - Represents a single clock object
 - Given by TKClockStore and consumed by TKClockView
 
-### `TKUserDefaults` (WIP)
+### `TKUserDefaults` [Complete]
 Serves as a class-method-based, block-based background thread wrapper for NSUserDefaults calls. Defines global defaults constants as well.
 
 
@@ -42,7 +42,7 @@ Serves as a class-method-based, block-based background thread wrapper for NSUser
 - Accent Color : `UIColor`
 - Secondhand Color : `UIColor`
 
-### `TKClock` (WIP)
+### `TKClock` [Complete]
 
 - Clock Title : `NSString`
 - Time Zone : `NSTimeZone`
@@ -58,22 +58,22 @@ Serves as a class-method-based, block-based background thread wrapper for NSUser
 
 ## Open Source Components
 
-### BEMAnalogClock
+### BEMAnalogClock [To Be Added, CocoaPods]
 The primary component in Tick’s centerpiece analog clock.
 
 Developed by [Boris-Em](https://github.com/Boris-Em/BEMAnalogClock). [(License, MIT)](https://github.com/Boris-Em/BEMAnalogClock/blob/master/LICENSE)
 
-### OAuth2Client
+### OAuth2Client [To Be Added, CocoaPods]
 Used in establishing the OAuth connection to Feedly.
 
 Developed by [nxtbgthng](https://github.com/nxtbgthng/OAuth2Client). [(License, BSD)](https://github.com/nxtbgthng/OAuth2Client#bsd-license)
 
-### UAObfuscatedString
+### UAObfuscatedString [To Be Added, CocoaPods]
 Used to encode Feedly client ID & secret in app binary.
 
 Developed by [UrbanApps](https://github.com/UrbanApps/UAObfuscatedString). [(License, MIT)](https://github.com/UrbanApps/UAObfuscatedString/blob/master/LICENSE)
 
-### US-State-Abbreviations
+### US-State-Abbreviations [Added, Static (LC e423e8165a)]
 Used to map US 2-letter state codes to full state names.
 
 Developed by [Norman Harebottle III](https://github.com/normanhh3/US-State-Abbreviations). [(License, MIT)](https://github.com/normanhh3/US-State-Abbreviations/blob/master/LICENSE)
