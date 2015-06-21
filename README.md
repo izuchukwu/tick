@@ -21,11 +21,11 @@ Styling manager dependency-injected into every custom view.
 ### `TKQuartz` [Complete]
 Single NSTimer broadcasting to all time-interval-watching objects app-wide, notifying them to update their timekeeping.
 
-### `TKClockStore` [Blocked:`TKClock`]
+### `TKClockStore` [Complete]
 Queryable database of all clocks & time zones, plus user's selected clocks, dependency-injected where necessary.
-- *To add method* `addClock:toUserStore`, `TKClock` *must be implemented*
+- *To add method* `addClockToUserStore:`, `TKClock` *must be implemented*
 
-### `TKClock` (WIP)
+### `TKClock` [Complete]
 - Represents a single clock object
 - Given by TKClockStore and consumed by TKClockView
 

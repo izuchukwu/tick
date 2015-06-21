@@ -39,9 +39,15 @@
 
 #pragma mark - User Store
 
-+ (void)userStoreWithCompletion:(void (^)(NSDictionary *results))completion {
++ (void)userStoreWithCompletion:(void (^)(NSArray *userStore))completion {
     [TKUserDefaults objectForKey:TKUserDefaultsKeyUserClockStore completion:^(id object) {
-        completion((NSDictionary *)object);
+        completion((NSArray *)object);
+    }];
+}
+
++ (void)addClockToUserStore:(TKClock *)clock {
+    [self userStoreWithCompletion:^(NSArray *userStore) {
+        [TKUserDefaults setObject:[userStore arrayByAddingObject:clock] forKey:TKUserDefaultsKeyUserClockStore];
     }];
 }
 

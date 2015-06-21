@@ -23,7 +23,15 @@
 }
 
 - (id)copyWithZone:(NSZone *)zone {
-    return self;
+    TKClockworkStyle *style = [[[self class] allocWithZone:zone] init];
+    if (style) {
+        style->_title = self.title;
+        style->_primaryColor = self.primaryColor;
+        style->_accentColor = self.accentColor;
+        style->_backgroundColor = self.backgroundColor;
+        style->_secondhandColor = self.secondhandColor;
+    }
+    return style;
 }
 
 #pragma mark - Defaults

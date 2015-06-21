@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8638115D1B37567700D88E75 /* TKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638115C1B37567700D88E75 /* TKUserDefaults.m */; };
+		863811611B3758E300D88E75 /* TKClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 863811601B3758E300D88E75 /* TKClock.m */; };
+		863811641B37597B00D88E75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863811631B37597B00D88E75 /* CoreLocation.framework */; };
 		866100731B352D63002653BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100721B352D63002653BD /* main.m */; };
 		866100761B352D63002653BD /* TKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100751B352D63002653BD /* TKAppDelegate.m */; };
 		866100791B352D63002653BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100781B352D63002653BD /* ViewController.m */; };
@@ -43,6 +45,9 @@
 /* Begin PBXFileReference section */
 		8638115B1B37567700D88E75 /* TKUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKUserDefaults.h; path = Core/TKUserDefaults.h; sourceTree = "<group>"; };
 		8638115C1B37567700D88E75 /* TKUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKUserDefaults.m; path = Core/TKUserDefaults.m; sourceTree = "<group>"; };
+		8638115F1B3758E300D88E75 /* TKClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKClock.h; path = Core/TKClock.h; sourceTree = "<group>"; };
+		863811601B3758E300D88E75 /* TKClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKClock.m; path = Core/TKClock.m; sourceTree = "<group>"; };
+		863811631B37597B00D88E75 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8661006D1B352D63002653BD /* Tick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		866100711B352D63002653BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		866100721B352D63002653BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,12 +91,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863811641B37597B00D88E75 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8638115E1B3758CD00D88E75 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8638115B1B37567700D88E75 /* TKUserDefaults.h */,
+				8638115C1B37567700D88E75 /* TKUserDefaults.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		863811621B37596800D88E75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				863811631B37597B00D88E75 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		866100641B352D63002653BD = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +149,7 @@
 		866100701B352D63002653BD /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				863811621B37596800D88E75 /* Frameworks */,
 				8661006E1B352D63002653BD /* Products */,
 				866100711B352D63002653BD /* Info.plist */,
 				866100721B352D63002653BD /* main.m */,
@@ -171,8 +195,9 @@
 				86D84CF11B35F82400C36B57 /* TKQuartz.m */,
 				86D84CF41B3612D800C36B57 /* TKClockStore.h */,
 				86D84CF51B3612D800C36B57 /* TKClockStore.m */,
-				8638115B1B37567700D88E75 /* TKUserDefaults.h */,
-				8638115C1B37567700D88E75 /* TKUserDefaults.m */,
+				8638115F1B3758E300D88E75 /* TKClock.h */,
+				863811601B3758E300D88E75 /* TKClock.m */,
+				8638115E1B3758CD00D88E75 /* Utility */,
 				86D84CFB1B362F4300C36B57 /* Data */,
 			);
 			name = Core;
@@ -324,6 +349,7 @@
 				8638115D1B37567700D88E75 /* TKUserDefaults.m in Sources */,
 				86D84CF21B35F82400C36B57 /* TKQuartz.m in Sources */,
 				866100761B352D63002653BD /* TKAppDelegate.m in Sources */,
+				863811611B3758E300D88E75 /* TKClock.m in Sources */,
 				86D84CEC1B35E29F00C36B57 /* TKClockwork.m in Sources */,
 				86D84CF61B3612D800C36B57 /* TKClockStore.m in Sources */,
 				866100731B352D63002653BD /* main.m in Sources */,
