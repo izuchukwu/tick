@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8638115D1B37567700D88E75 /* TKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638115C1B37567700D88E75 /* TKUserDefaults.m */; };
 		866100731B352D63002653BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100721B352D63002653BD /* main.m */; };
 		866100761B352D63002653BD /* TKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100751B352D63002653BD /* TKAppDelegate.m */; };
 		866100791B352D63002653BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100781B352D63002653BD /* ViewController.m */; };
@@ -17,6 +18,16 @@
 		86D84CEC1B35E29F00C36B57 /* TKClockwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CEB1B35E29F00C36B57 /* TKClockwork.m */; };
 		86D84CEF1B35E2C500C36B57 /* TKClockworkStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */; };
 		86D84CF21B35F82400C36B57 /* TKQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CF11B35F82400C36B57 /* TKQuartz.m */; };
+		86D84CF61B3612D800C36B57 /* TKClockStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CF51B3612D800C36B57 /* TKClockStore.m */; };
+		86D84CF81B362B0F00C36B57 /* TKClockStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CF71B362B0F00C36B57 /* TKClockStoreTests.m */; };
+		86D84CFA1B362C6F00C36B57 /* TKClockStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D84CF51B3612D800C36B57 /* TKClockStore.m */; };
+		86D84D021B362F4300C36B57 /* PrimaryLocationDataDiskStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D84CFC1B362F4300C36B57 /* PrimaryLocationDataDiskStore.plist */; };
+		86D84D031B362F4300C36B57 /* PrimaryLocationKeysDiskStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D84CFD1B362F4300C36B57 /* PrimaryLocationKeysDiskStore.plist */; };
+		86D84D041B362F4300C36B57 /* PrimaryTimeZoneDiskStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D84CFE1B362F4300C36B57 /* PrimaryTimeZoneDiskStore.plist */; };
+		86D84D051B362F4300C36B57 /* SecondaryLocationDataDiskStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D84CFF1B362F4300C36B57 /* SecondaryLocationDataDiskStore.plist */; };
+		86D84D061B362F4300C36B57 /* SecondaryLocationKeysDiskStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D84D001B362F4300C36B57 /* SecondaryLocationKeysDiskStore.plist */; };
+		86D84D071B362F4300C36B57 /* SecondaryTimeZoneDiskStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D84D011B362F4300C36B57 /* SecondaryTimeZoneDiskStore.plist */; };
+		86D84D091B36480400C36B57 /* UnitedStatesStateLocalityMapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D84D081B36480400C36B57 /* UnitedStatesStateLocalityMapping.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8638115B1B37567700D88E75 /* TKUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKUserDefaults.h; path = Core/TKUserDefaults.h; sourceTree = "<group>"; };
+		8638115C1B37567700D88E75 /* TKUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKUserDefaults.m; path = Core/TKUserDefaults.m; sourceTree = "<group>"; };
 		8661006D1B352D63002653BD /* Tick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		866100711B352D63002653BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		866100721B352D63002653BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +62,16 @@
 		86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKClockworkStyle.m; path = Core/TKClockworkStyle.m; sourceTree = "<group>"; };
 		86D84CF01B35F82400C36B57 /* TKQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKQuartz.h; path = Core/TKQuartz.h; sourceTree = "<group>"; };
 		86D84CF11B35F82400C36B57 /* TKQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKQuartz.m; path = Core/TKQuartz.m; sourceTree = "<group>"; };
+		86D84CF41B3612D800C36B57 /* TKClockStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKClockStore.h; path = Core/TKClockStore.h; sourceTree = "<group>"; };
+		86D84CF51B3612D800C36B57 /* TKClockStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKClockStore.m; path = Core/TKClockStore.m; sourceTree = "<group>"; };
+		86D84CF71B362B0F00C36B57 /* TKClockStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKClockStoreTests.m; path = Core/TKClockStoreTests.m; sourceTree = "<group>"; };
+		86D84CFC1B362F4300C36B57 /* PrimaryLocationDataDiskStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PrimaryLocationDataDiskStore.plist; sourceTree = "<group>"; };
+		86D84CFD1B362F4300C36B57 /* PrimaryLocationKeysDiskStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PrimaryLocationKeysDiskStore.plist; sourceTree = "<group>"; };
+		86D84CFE1B362F4300C36B57 /* PrimaryTimeZoneDiskStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PrimaryTimeZoneDiskStore.plist; sourceTree = "<group>"; };
+		86D84CFF1B362F4300C36B57 /* SecondaryLocationDataDiskStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SecondaryLocationDataDiskStore.plist; sourceTree = "<group>"; };
+		86D84D001B362F4300C36B57 /* SecondaryLocationKeysDiskStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SecondaryLocationKeysDiskStore.plist; sourceTree = "<group>"; };
+		86D84D011B362F4300C36B57 /* SecondaryTimeZoneDiskStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SecondaryTimeZoneDiskStore.plist; sourceTree = "<group>"; };
+		86D84D081B36480400C36B57 /* UnitedStatesStateLocalityMapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UnitedStatesStateLocalityMapping.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				8661006F1B352D63002653BD /* Tick */,
+				866100891B352D63002653BD /* TickTests */,
 				866100701B352D63002653BD /* Supporting */,
 			);
 			sourceTree = "<group>";
@@ -102,7 +126,6 @@
 		866100701B352D63002653BD /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				866100891B352D63002653BD /* TickTests */,
 				8661006E1B352D63002653BD /* Products */,
 				866100711B352D63002653BD /* Info.plist */,
 				866100721B352D63002653BD /* main.m */,
@@ -115,17 +138,18 @@
 			isa = PBXGroup;
 			children = (
 				8661008C1B352D63002653BD /* TickTests.m */,
-				8661008A1B352D63002653BD /* Supporting Files */,
+				86D84CF91B362B2E00C36B57 /* Core */,
+				8661008A1B352D63002653BD /* Supporting */,
 			);
 			path = TickTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		8661008A1B352D63002653BD /* Supporting Files */ = {
+		8661008A1B352D63002653BD /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
 				8661008B1B352D63002653BD /* Info.plist */,
 			);
-			name = "Supporting Files";
+			name = Supporting;
 			sourceTree = "<group>";
 		};
 		86D84CE71B35E23500C36B57 /* Assets */ = {
@@ -145,6 +169,11 @@
 				86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */,
 				86D84CF01B35F82400C36B57 /* TKQuartz.h */,
 				86D84CF11B35F82400C36B57 /* TKQuartz.m */,
+				86D84CF41B3612D800C36B57 /* TKClockStore.h */,
+				86D84CF51B3612D800C36B57 /* TKClockStore.m */,
+				8638115B1B37567700D88E75 /* TKUserDefaults.h */,
+				8638115C1B37567700D88E75 /* TKUserDefaults.m */,
+				86D84CFB1B362F4300C36B57 /* Data */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -158,6 +187,29 @@
 				8661007F1B352D63002653BD /* LaunchScreen.xib */,
 			);
 			name = Launch;
+			sourceTree = "<group>";
+		};
+		86D84CF91B362B2E00C36B57 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				86D84CF71B362B0F00C36B57 /* TKClockStoreTests.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		86D84CFB1B362F4300C36B57 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				86D84CFC1B362F4300C36B57 /* PrimaryLocationDataDiskStore.plist */,
+				86D84CFD1B362F4300C36B57 /* PrimaryLocationKeysDiskStore.plist */,
+				86D84CFE1B362F4300C36B57 /* PrimaryTimeZoneDiskStore.plist */,
+				86D84CFF1B362F4300C36B57 /* SecondaryLocationDataDiskStore.plist */,
+				86D84D001B362F4300C36B57 /* SecondaryLocationKeysDiskStore.plist */,
+				86D84D011B362F4300C36B57 /* SecondaryTimeZoneDiskStore.plist */,
+				86D84D081B36480400C36B57 /* UnitedStatesStateLocalityMapping.plist */,
+			);
+			name = Data;
+			path = Core/Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +293,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D84D031B362F4300C36B57 /* PrimaryLocationKeysDiskStore.plist in Resources */,
+				86D84D041B362F4300C36B57 /* PrimaryTimeZoneDiskStore.plist in Resources */,
+				86D84D051B362F4300C36B57 /* SecondaryLocationDataDiskStore.plist in Resources */,
+				86D84D091B36480400C36B57 /* UnitedStatesStateLocalityMapping.plist in Resources */,
+				86D84D061B362F4300C36B57 /* SecondaryLocationKeysDiskStore.plist in Resources */,
 				8661007C1B352D63002653BD /* Main.storyboard in Resources */,
 				866100811B352D63002653BD /* LaunchScreen.xib in Resources */,
+				86D84D071B362F4300C36B57 /* SecondaryTimeZoneDiskStore.plist in Resources */,
 				8661007E1B352D63002653BD /* Images.xcassets in Resources */,
+				86D84D021B362F4300C36B57 /* PrimaryLocationDataDiskStore.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +321,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				866100791B352D63002653BD /* ViewController.m in Sources */,
+				8638115D1B37567700D88E75 /* TKUserDefaults.m in Sources */,
 				86D84CF21B35F82400C36B57 /* TKQuartz.m in Sources */,
 				866100761B352D63002653BD /* TKAppDelegate.m in Sources */,
 				86D84CEC1B35E29F00C36B57 /* TKClockwork.m in Sources */,
+				86D84CF61B3612D800C36B57 /* TKClockStore.m in Sources */,
 				866100731B352D63002653BD /* main.m in Sources */,
 				86D84CEF1B35E2C500C36B57 /* TKClockworkStyle.m in Sources */,
 			);
@@ -274,7 +335,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D84CFA1B362C6F00C36B57 /* TKClockStore.m in Sources */,
 				8661008D1B352D63002653BD /* TickTests.m in Sources */,
+				86D84CF81B362B0F00C36B57 /* TKClockStoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

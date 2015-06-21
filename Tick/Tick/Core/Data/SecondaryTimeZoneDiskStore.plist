@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Alpha Time Zone</key>
+	<array>
+		<string>A</string>
+		<string>UTC+01:00</string>
+		<integer>60</integer>
+	</array>
+	<key>Bravo Time Zone</key>
+	<array>
+		<string>B</string>
+		<string>UTC+02:00</string>
+		<integer>120</integer>
+	</array>
+	<key>Charlie Time Zone</key>
+	<array>
+		<string>C</string>
+		<string>UTC+03:00</string>
+		<integer>180</integer>
+	</array>
+	<key>Delta Time Zone</key>
+	<array>
+		<string>D</string>
+		<string>UTC+04:00</string>
+		<integer>240</integer>
+	</array>
+	<key>Echo Time Zone</key>
+	<array>
+		<string>E</string>
+		<string>UTC+05:00</string>
+		<integer>300</integer>
+	</array>
+	<key>Foxtrot Time Zone</key>
+	<array>
+		<string>F</string>
+		<string>UTC+06:00</string>
+		<integer>360</integer>
+	</array>
+	<key>Golf Time Zone</key>
+	<array>
+		<string>G</string>
+		<string>UTC+07:00</string>
+		<integer>420</integer>
+	</array>
+	<key>Hotel Time Zone</key>
+	<array>
+		<string>H</string>
+		<string>UTC+08:00</string>
+		<integer>480</integer>
+	</array>
+	<key>India Time Zone</key>
+	<array>
+		<string>I</string>
+		<string>UTC+09:00</string>
+		<integer>540</integer>
+	</array>
+	<key>Kilo Time Zone</key>
+	<array>
+		<string>K</string>
+		<string>UTC+10:00</string>
+		<integer>600</integer>
+	</array>
+	<key>Lima Time Zone</key>
+	<array>
+		<string>L</string>
+		<string>UTC+11:00</string>
+		<integer>660</integer>
+	</array>
+	<key>Mike Time Zone</key>
+	<array>
+		<string>M</string>
+		<string>UTC+12:00</string>
+		<integer>720</integer>
+	</array>
+	<key>November Time Zone</key>
+	<array>
+		<string>N</string>
+		<string>UTC-01:00</string>
+		<integer>-60</integer>
+	</array>
+	<key>Oscar Time Zone</key>
+	<array>
+		<string>O</string>
+		<string>UTC-02:00</string>
+		<integer>-120</integer>
+	</array>
+	<key>Papa Time Zone</key>
+	<array>
+		<string>P</string>
+		<string>UTC-03:00</string>
+		<integer>-180</integer>
+	</array>
+	<key>Quebec Time Zone</key>
+	<array>
+		<string>Q</string>
+		<string>UTC-04:00</string>
+		<integer>-240</integer>
+	</array>
+	<key>Romeo Time Zone</key>
+	<array>
+		<string>R</string>
+		<string>UTC-05:00</string>
+		<integer>-300</integer>
+	</array>
+	<key>Sierra Time Zone</key>
+	<array>
+		<string>S</string>
+		<string>UTC-06:00</string>
+		<integer>-360</integer>
+	</array>
+	<key>Tango Time Zone</key>
+	<array>
+		<string>T</string>
+		<string>UTC-07:00</string>
+		<integer>-420</integer>
+	</array>
+	<key>Uniform Time Zone</key>
+	<array>
+		<string>U</string>
+		<string>UTC-08:00</string>
+		<integer>-480</integer>
+	</array>
+	<key>Victor Time Zone</key>
+	<array>
+		<string>V</string>
+		<string>UTC-09:00</string>
+		<integer>-540</integer>
+	</array>
+	<key>Whiskey Time Zone</key>
+	<array>
+		<string>W</string>
+		<string>UTC-10:00</string>
+		<integer>-600</integer>
+	</array>
+	<key>X-ray Time Zone</key>
+	<array>
+		<string>X</string>
+		<string>UTC-11:00</string>
+		<integer>-660</integer>
+	</array>
+	<key>Yankee Time Zone</key>
+	<array>
+		<string>Y</string>
+		<string>UTC-12:00</string>
+		<integer>-720</integer>
+	</array>
+	<key>Zulu Time Zone</key>
+	<array>
+		<string>Z</string>
+		<string>UTC±00:00</string>
+		<integer>0</integer>
+	</array>
+</dict>
+</plist>

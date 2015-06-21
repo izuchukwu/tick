@@ -2,10 +2,10 @@
 A different kind of clock. News, meetings, & world time while you work or play.
 
 ## View Structure
-`TKTickViewController` : `UIScrollViewController<TKClockworkStyleable>` (vertical)
-- `TKUpdateViewController` : `UIScrollViewController<TKClockworkStyleable>` (horizontal)
+`TKTickViewController` : `UICollectionViewController<TKClockworkStyleable>` (vertical)
+- `TKUpdateViewController` : `UICollectionViewController<TKClockworkStyleable>` (horizontal)
  - `TKUpdateView` : `UIView<TKClockworkStyleable>`
-- `TKClockViewController` : `UIScrollViewController<TKClockworkStyleable>` (horizontal)
+- `TKClockViewController` : `UICollectionViewController<TKClockworkStyleable>` (horizontal)
  - `TKClocksView` : `UIView<TKClockworkStyleable>`
  - `TKClockView` : `UIView<TKClockworkStyleable>`
 - `TKClockMetaView` : `UIView<TKClockworkStyleable>`
@@ -21,13 +21,16 @@ Styling manager dependency-injected into every custom view.
 ### `TKQuartz` [Complete]
 Single NSTimer broadcasting to all time-interval-watching objects app-wide, notifying them to update their timekeeping.
 
-### `TKClockStore` (WIP)
-- Database of all clocks & time zones
-- User’s clocks
+### `TKClockStore` [Blocked:`TKClock`]
+Queryable database of all clocks & time zones, plus user's selected clocks, dependency-injected where necessary.
+- *To add method* `addClock:toUserStore`, `TKClock` *must be implemented*
 
 ### `TKClock` (WIP)
 - Represents a single clock object
 - Given by TKClockStore and consumed by TKClockView
+
+### `TKUserDefaults` (WIP)
+Serves as a class-method-based, block-based background thread wrapper for NSUserDefaults calls. Defines global defaults constants as well.
 
 
 ## Custom Object Structure
@@ -69,4 +72,9 @@ Developed by [nxtbgthng](https://github.com/nxtbgthng/OAuth2Client). [(License, 
 Used to encode Feedly client ID & secret in app binary.
 
 Developed by [UrbanApps](https://github.com/UrbanApps/UAObfuscatedString). [(License, MIT)](https://github.com/UrbanApps/UAObfuscatedString/blob/master/LICENSE)
+
+### US-State-Abbreviations
+Used to map US 2-letter state codes to full state names.
+
+Developed by [Norman Harebottle III](https://github.com/normanhh3/US-State-Abbreviations). [(License, MIT)](https://github.com/normanhh3/US-State-Abbreviations/blob/master/LICENSE)
 

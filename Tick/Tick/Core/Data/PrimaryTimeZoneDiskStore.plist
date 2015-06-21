@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ASEAN Common Time</key>
+	<array>
+		<string>ACT</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Afghanistan Time</key>
+	<array>
+		<string>AFT</string>
+		<string>UTC+04:30</string>
+		<integer>270</integer>
+	</array>
+	<key>Alaska Daylight Time</key>
+	<array>
+		<string>AKDT</string>
+		<string>UTC-08</string>
+		<integer>-480</integer>
+	</array>
+	<key>Alaska Standard Time</key>
+	<array>
+		<string>AKST</string>
+		<string>UTC-09</string>
+		<integer>-540</integer>
+	</array>
+	<key>Amazon Summer Time (Brazil)</key>
+	<array>
+		<string>AMST</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Amazon Time (Brazil)</key>
+	<array>
+		<string>AMT</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Arabia Standard Time</key>
+	<array>
+		<string>AST</string>
+		<string>UTC+03</string>
+		<integer>180</integer>
+	</array>
+	<key>Argentina Time</key>
+	<array>
+		<string>ART</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Armenia Summer Time</key>
+	<array>
+		<string>AMST</string>
+		<string>UTC+05</string>
+		<integer>300</integer>
+	</array>
+	<key>Armenia Time</key>
+	<array>
+		<string>AMT</string>
+		<string>UTC+04</string>
+		<integer>240</integer>
+	</array>
+	<key>Atlantic Daylight Time</key>
+	<array>
+		<string>ADT</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Atlantic Standard Time</key>
+	<array>
+		<string>AST</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Australian Central Daylight Time</key>
+	<array>
+		<string>ACDT</string>
+		<string>UTC+10:30</string>
+		<integer>630</integer>
+	</array>
+	<key>Australian Central Standard Time</key>
+	<array>
+		<string>ACST</string>
+		<string>UTC+09:30</string>
+		<integer>570</integer>
+	</array>
+	<key>Australian Eastern Daylight Time</key>
+	<array>
+		<string>AEDT</string>
+		<string>UTC+11</string>
+		<integer>660</integer>
+	</array>
+	<key>Australian Eastern Standard Time</key>
+	<array>
+		<string>AEST</string>
+		<string>UTC+10</string>
+		<integer>600</integer>
+	</array>
+	<key>Australian Western Daylight Time</key>
+	<array>
+		<string>AWDT</string>
+		<string>UTC+09</string>
+		<integer>540</integer>
+	</array>
+	<key>Australian Western Standard Time</key>
+	<array>
+		<string>AWST</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Azerbaijan Time</key>
+	<array>
+		<string>AZT</string>
+		<string>UTC+04</string>
+		<integer>240</integer>
+	</array>
+	<key>Azores Standard Time</key>
+	<array>
+		<string>AZOST</string>
+		<string>UTC-01</string>
+		<integer>-60</integer>
+	</array>
+	<key>Baker Island Time</key>
+	<array>
+		<string>BIT</string>
+		<string>UTC-12</string>
+		<integer>-720</integer>
+	</array>
+	<key>Bangladesh Standard Time</key>
+	<array>
+		<string>BST</string>
+		<string>UTC+06</string>
+		<integer>360</integer>
+	</array>
+	<key>Bhutan Time</key>
+	<array>
+		<string>BTT</string>
+		<string>UTC+06</string>
+		<integer>360</integer>
+	</array>
+	<key>Bolivia Time</key>
+	<array>
+		<string>BOT</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Brasilia Time</key>
+	<array>
+		<string>BRT</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>British Indian Ocean Time</key>
+	<array>
+		<string>BIOT</string>
+		<string>UTC+06</string>
+		<integer>360</integer>
+	</array>
+	<key>British Summer Time</key>
+	<array>
+		<string>BST</string>
+		<string>UTC+01</string>
+		<integer>60</integer>
+	</array>
+	<key>Brunei Time</key>
+	<array>
+		<string>BDT</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Cape Verde Time</key>
+	<array>
+		<string>CVT</string>
+		<string>UTC-01</string>
+		<integer>-60</integer>
+	</array>
+	<key>Central Africa Time</key>
+	<array>
+		<string>CAT</string>
+		<string>UTC+02</string>
+		<integer>120</integer>
+	</array>
+	<key>Central Daylight Time (North America)</key>
+	<array>
+		<string>CDT</string>
+		<string>UTC-05</string>
+		<integer>-300</integer>
+	</array>
+	<key>Central European Daylight Time</key>
+	<array>
+		<string>CEDT</string>
+		<string>UTC+02</string>
+		<integer>120</integer>
+	</array>
+	<key>Central European Summer Time</key>
+	<array>
+		<string>CEST</string>
+		<string>UTC+02</string>
+		<integer>120</integer>
+	</array>
+	<key>Central European Time</key>
+	<array>
+		<string>CET</string>
+		<string>UTC+01</string>
+		<integer>60</integer>
+	</array>
+	<key>Central Indonesia Time</key>
+	<array>
+		<string>CIT</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Central Standard Time (Australia)</key>
+	<array>
+		<string>CST</string>
+		<string>UTC+09:30</string>
+		<integer>570</integer>
+	</array>
+	<key>Central Standard Time (North America)</key>
+	<array>
+		<string>CST</string>
+		<string>UTC-06</string>
+		<integer>-360</integer>
+	</array>
+	<key>Central Summer Time (Australia)</key>
+	<array>
+		<string>CST</string>
+		<string>UTC+10:30</string>
+		<integer>630</integer>
+	</array>
+	<key>Central Western Standard Time (Australia)</key>
+	<array>
+		<string>CWST</string>
+		<string>UTC+08:45</string>
+		<integer>525</integer>
+	</array>
+	<key>Chamorro Standard Time</key>
+	<array>
+		<string>ChST</string>
+		<string>UTC+10</string>
+		<integer>600</integer>
+	</array>
+	<key>Chatham Daylight Time</key>
+	<array>
+		<string>CHADT</string>
+		<string>UTC+13:45</string>
+		<integer>825</integer>
+	</array>
+	<key>Chatham Standard Time</key>
+	<array>
+		<string>CHAST</string>
+		<string>UTC+12:45</string>
+		<integer>765</integer>
+	</array>
+	<key>Chile Standard Time</key>
+	<array>
+		<string>CLT</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Chile Summer Time</key>
+	<array>
+		<string>CLST</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>China Standard Time</key>
+	<array>
+		<string>CST</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>China time</key>
+	<array>
+		<string>CT</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Choibalsan</key>
+	<array>
+		<string>CHOT</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Christmas Island Time</key>
+	<array>
+		<string>CXT</string>
+		<string>UTC+07</string>
+		<integer>420</integer>
+	</array>
+	<key>Chuuk Time</key>
+	<array>
+		<string>CHUT</string>
+		<string>UTC+10</string>
+		<integer>600</integer>
+	</array>
+	<key>Clipperton Island Standard Time</key>
+	<array>
+		<string>CIST</string>
+		<string>UTC-08</string>
+		<integer>-480</integer>
+	</array>
+	<key>Cocos Islands Time</key>
+	<array>
+		<string>CCT</string>
+		<string>UTC+06:30</string>
+		<integer>390</integer>
+	</array>
+	<key>Colombia Summer Time</key>
+	<array>
+		<string>COST</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Colombia Time</key>
+	<array>
+		<string>COT</string>
+		<string>UTC-05</string>
+		<integer>-300</integer>
+	</array>
+	<key>Cook Island Time</key>
+	<array>
+		<string>CKT</string>
+		<string>UTC-10</string>
+		<integer>-600</integer>
+	</array>
+	<key>Coordinated Universal Time</key>
+	<array>
+		<string>UTC</string>
+		<string>UTC</string>
+		<integer>0</integer>
+	</array>
+	<key>Cuba Daylight Time</key>
+	<array>
+		<string>CDT</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Cuba Standard Time</key>
+	<array>
+		<string>CST</string>
+		<string>UTC-05</string>
+		<integer>-300</integer>
+	</array>
+	<key>Davis Time</key>
+	<array>
+		<string>DAVT</string>
+		<string>UTC+07</string>
+		<integer>420</integer>
+	</array>
+	<key>Dumont d'Urville Time</key>
+	<array>
+		<string>DDUT</string>
+		<string>UTC+10</string>
+		<integer>600</integer>
+	</array>
+	<key>East Africa Time</key>
+	<array>
+		<string>EAT</string>
+		<string>UTC+03</string>
+		<integer>180</integer>
+	</array>
+	<key>Easter Island Standard Summer Time</key>
+	<array>
+		<string>EASST</string>
+		<string>UTC-05</string>
+		<integer>-300</integer>
+	</array>
+	<key>Easter Island Standard Time</key>
+	<array>
+		<string>EAST</string>
+		<string>UTC-06</string>
+		<integer>-360</integer>
+	</array>
+	<key>Eastern Caribbean Time</key>
+	<array>
+		<string>ECT</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Eastern Daylight Time (North America)</key>
+	<array>
+		<string>EDT</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Eastern European Daylight Time</key>
+	<array>
+		<string>EEDT</string>
+		<string>UTC+03</string>
+		<integer>180</integer>
+	</array>
+	<key>Eastern European Summer Time</key>
+	<array>
+		<string>EEST</string>
+		<string>UTC+03</string>
+		<integer>180</integer>
+	</array>
+	<key>Eastern European Time</key>
+	<array>
+		<string>EET</string>
+		<string>UTC+02</string>
+		<integer>120</integer>
+	</array>
+	<key>Eastern Greenland Summer Time</key>
+	<array>
+		<string>EGST</string>
+		<string>UTC+00</string>
+		<integer>0</integer>
+	</array>
+	<key>Eastern Greenland Time</key>
+	<array>
+		<string>EGT</string>
+		<string>UTC-01</string>
+		<integer>-60</integer>
+	</array>
+	<key>Eastern Indonesian Time</key>
+	<array>
+		<string>EIT</string>
+		<string>UTC+09</string>
+		<integer>540</integer>
+	</array>
+	<key>Eastern Standard Time (Australia)</key>
+	<array>
+		<string>EST</string>
+		<string>UTC+10</string>
+		<integer>600</integer>
+	</array>
+	<key>Eastern Standard Time (North America)</key>
+	<array>
+		<string>EST</string>
+		<string>UTC-05</string>
+		<integer>-300</integer>
+	</array>
+	<key>Ecuador Time</key>
+	<array>
+		<string>ECT</string>
+		<string>UTC-05</string>
+		<integer>-300</integer>
+	</array>
+	<key>Falkland Islands Standard Time</key>
+	<array>
+		<string>FKST</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Falkland Islands Summer Time</key>
+	<array>
+		<string>FKST</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Falkland Islands Time</key>
+	<array>
+		<string>FKT</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Fernando de Noronha Time</key>
+	<array>
+		<string>FNT</string>
+		<string>UTC-02</string>
+		<integer>-120</integer>
+	</array>
+	<key>Fiji Time</key>
+	<array>
+		<string>FJT</string>
+		<string>UTC+12</string>
+		<integer>720</integer>
+	</array>
+	<key>French Guiana Time</key>
+	<array>
+		<string>GFT</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Further-eastern European Time</key>
+	<array>
+		<string>FET</string>
+		<string>UTC+03</string>
+		<integer>180</integer>
+	</array>
+	<key>Galapagos Time</key>
+	<array>
+		<string>GALT</string>
+		<string>UTC-06</string>
+		<integer>-360</integer>
+	</array>
+	<key>Gambier Island Time</key>
+	<array>
+		<string>GIT</string>
+		<string>UTC-09</string>
+		<integer>-540</integer>
+	</array>
+	<key>Gambier Islands</key>
+	<array>
+		<string>GAMT</string>
+		<string>UTC-09</string>
+		<integer>-540</integer>
+	</array>
+	<key>Georgia Standard Time</key>
+	<array>
+		<string>GET</string>
+		<string>UTC+04</string>
+		<integer>240</integer>
+	</array>
+	<key>Gilbert Island Time</key>
+	<array>
+		<string>GILT</string>
+		<string>UTC+12</string>
+		<integer>720</integer>
+	</array>
+	<key>Greenwich Mean Time</key>
+	<array>
+		<string>GMT</string>
+		<string>UTC</string>
+		<integer>0</integer>
+	</array>
+	<key>Gulf Standard Time</key>
+	<array>
+		<string>GST</string>
+		<string>UTC+04</string>
+		<integer>240</integer>
+	</array>
+	<key>Guyana Time</key>
+	<array>
+		<string>GYT</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Hawaii Standard Time</key>
+	<array>
+		<string>HST</string>
+		<string>UTC-10</string>
+		<integer>-600</integer>
+	</array>
+	<key>Hawaii-Aleutian Daylight Time</key>
+	<array>
+		<string>HADT</string>
+		<string>UTC-09</string>
+		<integer>-540</integer>
+	</array>
+	<key>Hawaii-Aleutian Standard Time</key>
+	<array>
+		<string>HAST</string>
+		<string>UTC-10</string>
+		<integer>-600</integer>
+	</array>
+	<key>Heard and McDonald Islands Time</key>
+	<array>
+		<string>HMT</string>
+		<string>UTC+05</string>
+		<integer>300</integer>
+	</array>
+	<key>Heure Avancée d'Europe Centrale</key>
+	<array>
+		<string>HAEC</string>
+		<string>UTC+02</string>
+		<integer>120</integer>
+	</array>
+	<key>Hong Kong Time</key>
+	<array>
+		<string>HKT</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Indian Ocean Time</key>
+	<array>
+		<string>IOT</string>
+		<string>UTC+03</string>
+		<integer>180</integer>
+	</array>
+	<key>Indian Standard Time</key>
+	<array>
+		<string>IST</string>
+		<string>UTC+05:30</string>
+		<integer>330</integer>
+	</array>
+	<key>Indian/Kerguelen</key>
+	<array>
+		<string>TFT</string>
+		<string>UTC+05</string>
+		<integer>300</integer>
+	</array>
+	<key>Indochina Time</key>
+	<array>
+		<string>ICT</string>
+		<string>UTC+07</string>
+		<integer>420</integer>
+	</array>
+	<key>Iran Daylight Time</key>
+	<array>
+		<string>IRDT</string>
+		<string>UTC+04:30</string>
+		<integer>270</integer>
+	</array>
+	<key>Iran Standard Time</key>
+	<array>
+		<string>IRST</string>
+		<string>UTC+03:30</string>
+		<integer>210</integer>
+	</array>
+	<key>Irish Standard Time</key>
+	<array>
+		<string>IST</string>
+		<string>UTC+01</string>
+		<integer>60</integer>
+	</array>
+	<key>Irkutsk Time</key>
+	<array>
+		<string>IRKT</string>
+		<string>UTC+09</string>
+		<integer>540</integer>
+	</array>
+	<key>Israel Daylight Time</key>
+	<array>
+		<string>IDT</string>
+		<string>UTC+03</string>
+		<integer>180</integer>
+	</array>
+	<key>Israel Standard Time</key>
+	<array>
+		<string>IST</string>
+		<string>UTC+02</string>
+		<integer>120</integer>
+	</array>
+	<key>Japan Standard Time</key>
+	<array>
+		<string>JST</string>
+		<string>UTC+09</string>
+		<integer>540</integer>
+	</array>
+	<key>Kamchatka Time</key>
+	<array>
+		<string>PETT</string>
+		<string>UTC+12</string>
+		<integer>720</integer>
+	</array>
+	<key>Khovd Time</key>
+	<array>
+		<string>HOVT</string>
+		<string>UTC+07</string>
+		<integer>420</integer>
+	</array>
+	<key>Korea Standard Time</key>
+	<array>
+		<string>KST</string>
+		<string>UTC+09</string>
+		<integer>540</integer>
+	</array>
+	<key>Kosrae Time</key>
+	<array>
+		<string>KOST</string>
+		<string>UTC+11</string>
+		<integer>660</integer>
+	</array>
+	<key>Krasnoyarsk Time</key>
+	<array>
+		<string>KRAT</string>
+		<string>UTC+07</string>
+		<integer>420</integer>
+	</array>
+	<key>Kyrgyzstan time</key>
+	<array>
+		<string>KGT</string>
+		<string>UTC+06</string>
+		<integer>360</integer>
+	</array>
+	<key>Line Islands Time</key>
+	<array>
+		<string>LINT</string>
+		<string>UTC+14</string>
+		<integer>840</integer>
+	</array>
+	<key>Lord Howe Standard Time</key>
+	<array>
+		<string>LHST</string>
+		<string>UTC+10:30</string>
+		<integer>630</integer>
+	</array>
+	<key>Lord Howe Summer Time</key>
+	<array>
+		<string>LHST</string>
+		<string>UTC+11</string>
+		<integer>660</integer>
+	</array>
+	<key>Macquarie Island Station Time</key>
+	<array>
+		<string>MIST</string>
+		<string>UTC+11</string>
+		<integer>660</integer>
+	</array>
+	<key>Magadan Time</key>
+	<array>
+		<string>MAGT</string>
+		<string>UTC+12</string>
+		<integer>720</integer>
+	</array>
+	<key>Malaysia Standard Time</key>
+	<array>
+		<string>MST</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Malaysia Time</key>
+	<array>
+		<string>MYT</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Maldives Time</key>
+	<array>
+		<string>MVT</string>
+		<string>UTC+05</string>
+		<integer>300</integer>
+	</array>
+	<key>Marquesas Islands Time</key>
+	<array>
+		<string>MIT</string>
+		<string>UTC-09:30</string>
+		<integer>-510</integer>
+	</array>
+	<key>Marshall Islands</key>
+	<array>
+		<string>MHT</string>
+		<string>UTC+12</string>
+		<integer>720</integer>
+	</array>
+	<key>Mauritius Time</key>
+	<array>
+		<string>MUT</string>
+		<string>UTC+04</string>
+		<integer>240</integer>
+	</array>
+	<key>Mawson Station Time</key>
+	<array>
+		<string>MAWT</string>
+		<string>UTC+05</string>
+		<integer>300</integer>
+	</array>
+	<key>Middle European Saving Time</key>
+	<array>
+		<string>MEST</string>
+		<string>UTC+02</string>
+		<integer>120</integer>
+	</array>
+	<key>Middle European Time</key>
+	<array>
+		<string>MET</string>
+		<string>UTC+01</string>
+		<integer>60</integer>
+	</array>
+	<key>Moscow Time</key>
+	<array>
+		<string>MSK</string>
+		<string>UTC+04</string>
+		<integer>240</integer>
+	</array>
+	<key>Mountain Daylight Time (North America)</key>
+	<array>
+		<string>MDT</string>
+		<string>UTC-06</string>
+		<integer>-360</integer>
+	</array>
+	<key>Mountain Standard Time (North America)</key>
+	<array>
+		<string>MST</string>
+		<string>UTC-07</string>
+		<integer>-420</integer>
+	</array>
+	<key>Myanmar Standard Time</key>
+	<array>
+		<string>MST</string>
+		<string>UTC+06:30</string>
+		<integer>390</integer>
+	</array>
+	<key>Myanmar Time</key>
+	<array>
+		<string>MMT</string>
+		<string>UTC+06:30</string>
+		<integer>390</integer>
+	</array>
+	<key>Nepal Time</key>
+	<array>
+		<string>NPT</string>
+		<string>UTC+05:45</string>
+		<integer>345</integer>
+	</array>
+	<key>New Caledonia Time</key>
+	<array>
+		<string>NCT</string>
+		<string>UTC+11</string>
+		<integer>660</integer>
+	</array>
+	<key>New Zealand Daylight Time</key>
+	<array>
+		<string>NZDT</string>
+		<string>UTC+13</string>
+		<integer>780</integer>
+	</array>
+	<key>New Zealand Standard Time</key>
+	<array>
+		<string>NZST</string>
+		<string>UTC+12</string>
+		<integer>720</integer>
+	</array>
+	<key>Newfoundland Daylight Time</key>
+	<array>
+		<string>NDT</string>
+		<string>UTC-02:30</string>
+		<integer>-90</integer>
+	</array>
+	<key>Newfoundland Standard Time</key>
+	<array>
+		<string>NST</string>
+		<string>UTC-03:30</string>
+		<integer>-150</integer>
+	</array>
+	<key>Newfoundland Time</key>
+	<array>
+		<string>NT</string>
+		<string>UTC-03:30</string>
+		<integer>-150</integer>
+	</array>
+	<key>Niue Time</key>
+	<array>
+		<string>NUT</string>
+		<string>UTC-11</string>
+		<integer>-660</integer>
+	</array>
+	<key>Norfolk Time</key>
+	<array>
+		<string>NFT</string>
+		<string>UTC+11:30</string>
+		<integer>690</integer>
+	</array>
+	<key>Omsk Time</key>
+	<array>
+		<string>OMST</string>
+		<string>UTC+07</string>
+		<integer>420</integer>
+	</array>
+	<key>Oral Time</key>
+	<array>
+		<string>ORAT</string>
+		<string>UTC+05</string>
+		<integer>300</integer>
+	</array>
+	<key>Pacific Daylight Time (North America)</key>
+	<array>
+		<string>PDT</string>
+		<string>UTC-07</string>
+		<integer>-420</integer>
+	</array>
+	<key>Pacific Standard Time (North America)</key>
+	<array>
+		<string>PST</string>
+		<string>UTC-08</string>
+		<integer>-480</integer>
+	</array>
+	<key>Pakistan Standard Time</key>
+	<array>
+		<string>PKT</string>
+		<string>UTC+05</string>
+		<integer>300</integer>
+	</array>
+	<key>Papua New Guinea Time</key>
+	<array>
+		<string>PGT</string>
+		<string>UTC+10</string>
+		<integer>600</integer>
+	</array>
+	<key>Paraguay Summer Time (South America)</key>
+	<array>
+		<string>PYST</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Paraguay Time (South America)</key>
+	<array>
+		<string>PYT</string>
+		<string>UTC-04</string>
+		<integer>-240</integer>
+	</array>
+	<key>Peru Time</key>
+	<array>
+		<string>PET</string>
+		<string>UTC-05</string>
+		<integer>-300</integer>
+	</array>
+	<key>Philippine Time</key>
+	<array>
+		<string>PHT</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Phoenix Island Time</key>
+	<array>
+		<string>PHOT</string>
+		<string>UTC+13</string>
+		<integer>780</integer>
+	</array>
+	<key>Pohnpei Standard Time</key>
+	<array>
+		<string>PONT</string>
+		<string>UTC+11</string>
+		<integer>660</integer>
+	</array>
+	<key>Rothera Research Station Time</key>
+	<array>
+		<string>ROTT</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Réunion Time</key>
+	<array>
+		<string>RET</string>
+		<string>UTC+04</string>
+		<integer>240</integer>
+	</array>
+	<key>Saint Pierre and Miquelon Daylight time</key>
+	<array>
+		<string>PMDT</string>
+		<string>UTC-02</string>
+		<integer>-120</integer>
+	</array>
+	<key>Saint Pierre and Miquelon Standard Time</key>
+	<array>
+		<string>PMST</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Sakhalin Island time</key>
+	<array>
+		<string>SAKT</string>
+		<string>UTC+11</string>
+		<integer>660</integer>
+	</array>
+	<key>Samara Time</key>
+	<array>
+		<string>SAMT</string>
+		<string>UTC+04</string>
+		<integer>240</integer>
+	</array>
+	<key>Samoa Standard Time</key>
+	<array>
+		<string>SST</string>
+		<string>UTC-11</string>
+		<integer>-660</integer>
+	</array>
+	<key>Seychelles Time</key>
+	<array>
+		<string>SCT</string>
+		<string>UTC+04</string>
+		<integer>240</integer>
+	</array>
+	<key>Showa Station Time</key>
+	<array>
+		<string>SYOT</string>
+		<string>UTC+03</string>
+		<integer>180</integer>
+	</array>
+	<key>Singapore Standard Time</key>
+	<array>
+		<string>SST</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Singapore Time</key>
+	<array>
+		<string>SGT</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Solomon Islands Time</key>
+	<array>
+		<string>SBT</string>
+		<string>UTC+11</string>
+		<integer>660</integer>
+	</array>
+	<key>South African Standard Time</key>
+	<array>
+		<string>SAST</string>
+		<string>UTC+02</string>
+		<integer>120</integer>
+	</array>
+	<key>South Georgia and the South Sandwich Islands</key>
+	<array>
+		<string>GST</string>
+		<string>UTC-02</string>
+		<integer>-120</integer>
+	</array>
+	<key>Sri Lanka Time</key>
+	<array>
+		<string>SLST</string>
+		<string>UTC+05:30</string>
+		<integer>330</integer>
+	</array>
+	<key>Suriname Time</key>
+	<array>
+		<string>SRT</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Tahiti Time</key>
+	<array>
+		<string>TAHT</string>
+		<string>UTC-10</string>
+		<integer>-600</integer>
+	</array>
+	<key>Tajikistan Time</key>
+	<array>
+		<string>TJT</string>
+		<string>UTC+05</string>
+		<integer>300</integer>
+	</array>
+	<key>Thailand Standard Time</key>
+	<array>
+		<string>THA</string>
+		<string>UTC+07</string>
+		<integer>420</integer>
+	</array>
+	<key>Timor Leste Time</key>
+	<array>
+		<string>TLT</string>
+		<string>UTC+09</string>
+		<integer>540</integer>
+	</array>
+	<key>Tokelau Time</key>
+	<array>
+		<string>TKT</string>
+		<string>UTC+13</string>
+		<integer>780</integer>
+	</array>
+	<key>Tonga Time</key>
+	<array>
+		<string>TOT</string>
+		<string>UTC+13</string>
+		<integer>780</integer>
+	</array>
+	<key>Turkmenistan Time</key>
+	<array>
+		<string>TMT</string>
+		<string>UTC+05</string>
+		<integer>300</integer>
+	</array>
+	<key>Tuvalu Time</key>
+	<array>
+		<string>TVT</string>
+		<string>UTC+12</string>
+		<integer>720</integer>
+	</array>
+	<key>Ulaanbaatar Time</key>
+	<array>
+		<string>ULAT</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Uruguay Standard Time</key>
+	<array>
+		<string>UYT</string>
+		<string>UTC-03</string>
+		<integer>-180</integer>
+	</array>
+	<key>Uruguay Summer Time</key>
+	<array>
+		<string>UYST</string>
+		<string>UTC-02</string>
+		<integer>-120</integer>
+	</array>
+	<key>Uzbekistan Time</key>
+	<array>
+		<string>UZT</string>
+		<string>UTC+05</string>
+		<integer>300</integer>
+	</array>
+	<key>Vanuatu Time</key>
+	<array>
+		<string>VUT</string>
+		<string>UTC+11</string>
+		<integer>660</integer>
+	</array>
+	<key>Venezuelan Standard Time</key>
+	<array>
+		<string>VET</string>
+		<string>UTC-04:30</string>
+		<integer>-210</integer>
+	</array>
+	<key>Vladivostok Time</key>
+	<array>
+		<string>VLAT</string>
+		<string>UTC+10</string>
+		<integer>600</integer>
+	</array>
+	<key>Volgograd Time</key>
+	<array>
+		<string>VOLT</string>
+		<string>UTC+04</string>
+		<integer>240</integer>
+	</array>
+	<key>Vostok Station Time</key>
+	<array>
+		<string>VOST</string>
+		<string>UTC+06</string>
+		<integer>360</integer>
+	</array>
+	<key>Wake Island Time</key>
+	<array>
+		<string>WAKT</string>
+		<string>UTC+12</string>
+		<integer>720</integer>
+	</array>
+	<key>West Africa Summer Time</key>
+	<array>
+		<string>WAST</string>
+		<string>UTC+02</string>
+		<integer>120</integer>
+	</array>
+	<key>West Africa Time</key>
+	<array>
+		<string>WAT</string>
+		<string>UTC+01</string>
+		<integer>60</integer>
+	</array>
+	<key>Western European Daylight Time</key>
+	<array>
+		<string>WEDT</string>
+		<string>UTC+01</string>
+		<integer>60</integer>
+	</array>
+	<key>Western European Summer Time</key>
+	<array>
+		<string>WEST</string>
+		<string>UTC+01</string>
+		<integer>60</integer>
+	</array>
+	<key>Western European Time</key>
+	<array>
+		<string>WET</string>
+		<string>UTC</string>
+		<integer>0</integer>
+	</array>
+	<key>Western Standard Time</key>
+	<array>
+		<string>WST</string>
+		<string>UTC+08</string>
+		<integer>480</integer>
+	</array>
+	<key>Yakutsk Time</key>
+	<array>
+		<string>YAKT</string>
+		<string>UTC+10</string>
+		<integer>600</integer>
+	</array>
+	<key>Yekaterinburg Time</key>
+	<array>
+		<string>YEKT</string>
+		<string>UTC+06</string>
+		<integer>360</integer>
+	</array>
+	<key>Zulu Time</key>
+	<array>
+		<string>Z</string>
+		<string>UTC</string>
+		<integer>0</integer>
+	</array>
+</dict>
+</plist>
