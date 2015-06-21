@@ -28,4 +28,6 @@
 
 - (instancetype)initWithTimeZoneStoreIdentifier:(NSString *)identifier UTCOffset:(NSInteger)UTCOffset title:(NSString *)title subtitle:(NSString *)subtitle;
 
+- (BOOL)isLocationAccurate;
+
 @end

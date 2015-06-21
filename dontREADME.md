@@ -28,5 +28,11 @@ init with below vals & either UTCOffset : int or timeZoneIdentifier : NSString, 
 
 xxxx is disk store ID
 
-Location: LLxxxx
-Time Zone: TZxxxx
+Location [Primary]: LL1-xxxx
+Location [Secondary]: LL1-xxxx
+Time Zone [Primary]: TZ1-xxxx
+Time Zone [Seondary]: TZ2-xxxx
+
+## Pending Core Refactors
+
+- All hard-coded `NSStrings` to `const`, esp `NSDictionary` keys & `TKClockStore` identifier prefixes

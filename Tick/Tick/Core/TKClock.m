@@ -85,6 +85,10 @@
     }
 }
 
+- (BOOL)isLocationAccurate {
+    return _location;
+}
+
 #pragma mark - Copying
 
 - (id)copyWithZone:(NSZone *)zone {

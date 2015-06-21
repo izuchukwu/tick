@@ -51,6 +51,23 @@
     }];
 }
 
+#pragma mark - Clock Synthesis
+
++ (void)clockForClockData:(NSDictionary *)data completion:(void (^)(TKClock *clock))completion {
+    NSString *identifier = data[@"key"];
+    
+    if ([identifier hasPrefix:@"LL"]) {
+        TKClock *clock = [[TKClock alloc] initWithLocationStoreIdentifier:identifier timeZoneIdentifier:data[@"timezone"] title:data[@"title"] subtitle:data[@"subtitle"] location:[[CLLocation alloc] initWithLatitude:[data[@"lat"] floatValue] longitude:[data[@"lon"] floatValue]]];
+        completion(clock);
+    } else if ([identifier hasPrefix:@"TZ"]) {
+        TKClock *clock = [[TKClock alloc] initWithTimeZoneStoreIdentifier:identifier UTCOffset:[data[@"offset"] intValue] title:data[@"title"] subtitle:data[@"subtitle"]];
+        completion(clock);
+    } else {
+        NSLog(@"[Error] Clock request with invalid identifier prefix ignored");
+        completion(nil);
+    }
+}
+
 #pragma mark - Quartz
 
 - (void)quartzDidResonate {
@@ -180,6 +197,14 @@ NSString *const TKClockStoreSecondaryTimeZoneDiskStorePlist = @"SecondaryTimeZon
         NSString *subtitle = [self locationSubtitleForData:@[locationItemData[5], locationItemData[6]]];
         if (subtitle) location[@"subtitle"] = subtitle;
         
+        location[@"key"] = [@"LL1-" stringByAppendingString:locationKey];
+        
+        // Extended Location-based Clock Data
+        
+        location[@"lat"] = locationItemData[3];
+        location[@"lon"] = locationItemData[4];
+        location[@"timezone"] = locationItemData[7];
+        
         [locationStore addObject:[NSDictionary dictionaryWithDictionary:location]];
     }
     
@@ -217,7 +242,18 @@ NSString *const TKClockStoreSecondaryTimeZoneDiskStorePlist = @"SecondaryTimeZon
         
         NSMutableDictionary *location = [NSMutableDictionary dictionaryWithDictionary:self.secondaryLocationDiskStore[i]];
         location[@"title"] = locationItemData[1];
-        location[@"subtitle"] = locationItemData[5];
+        
+        NSString *subtitle = [self locationSubtitleForData:@[locationItemData[5], locationItemData[6]]];
+        if (subtitle) location[@"subtitle"] = subtitle;
+        
+        location[@"key"] = [@"LL2-" stringByAppendingString:locationKey];
+        
+        // Extended Location-based Clock Data
+        
+        location[@"lat"] = locationItemData[3];
+        location[@"lon"] = locationItemData[4];
+        location[@"timezone"] = locationItemData[7];
+        
         [locationStore addObject:[NSDictionary dictionaryWithDictionary:location]];
     }
     
@@ -230,7 +266,13 @@ NSString *const TKClockStoreSecondaryTimeZoneDiskStorePlist = @"SecondaryTimeZon
         NSMutableArray *timezoneStore = [[NSMutableArray alloc] init];
         
         for (NSString *timezoneKey in timezones) {
-            NSDictionary *timezoneStoreItem = @{@"key":timezoneKey, @"title":timezoneKey, @"subtitle":timezones[timezoneKey][0]};
+            NSString *identifier = [@"TZ1-" stringByAppendingString:timezoneKey];
+            
+            // Note
+            // The key "offset" counts as Extended Time Zone-based Clock Data
+            
+            NSDictionary *timezoneStoreItem = @{@"key":identifier, @"title":timezoneKey, @"subtitle":timezones[timezoneKey][0], @"offset":[NSString stringWithFormat:@"%d", [timezones[timezoneKey][2] intValue]]};
+            
             [timezoneStore addObject:timezoneStoreItem];
         }
         
@@ -248,7 +290,13 @@ NSString *const TKClockStoreSecondaryTimeZoneDiskStorePlist = @"SecondaryTimeZon
         NSMutableArray *timezoneStore = [[NSMutableArray alloc] init];
         
         for (NSString *timezoneKey in timezones) {
-            NSDictionary *timezoneStoreItem = @{@"title":timezoneKey, @"subtitle":timezones[timezoneKey][0]};
+            NSString *identifier = [@"TZ2-" stringByAppendingString:timezoneKey];
+            
+            // Note
+            // The key "offset" counts as Extended Time Zone-based Clock Data
+            
+            NSDictionary *timezoneStoreItem = @{@"key":identifier, @"title":timezoneKey, @"subtitle":timezones[timezoneKey][0], @"offset":[NSString stringWithFormat:@"%d", [timezones[timezoneKey][2] intValue]]};
+            
             [timezoneStore addObject:timezoneStoreItem];
         }
         
