@@ -1,7 +1,8 @@
 # tick
 A different kind of clock. News, meetings, & world time while you work or play.
 
-## View Structure
+## View Structure [Hold: Core]
+
 `TKTickViewController` : `UICollectionViewController<TKClockworkStyleable>` (vertical)
 - `TKNotificationViewController` : `UICollectionViewController<TKClockworkStyleable>` (horizontal)
  - `TKNotificationView` : `UIView<TKClockworkStyleable>`
@@ -11,7 +12,7 @@ A different kind of clock. News, meetings, & world time while you work or play.
 - `TKClockMetaView` : `UIView<TKClockworkStyleable>`
 
 
-## Core
+## Core (WIP)
 
 ### `TKClockwork` [Complete]
 Styling manager dependency-injected into every custom view.
@@ -43,7 +44,7 @@ Stores location ID to weather ID mappings retreived from weather data source, as
 ### `TKMusic` [Hold: `TKNotification`]
 Listens for track change notifications to system's music player & re-broadcasts as internal notifications.
 
-### `TKNotification` (WIP)
+### `TKNotification` [Complete]
 Has `const` key for internal notifications and also defines the internal notification payload structure.
 
 
@@ -67,13 +68,14 @@ Has `const` key for internal notifications and also defines the internal notific
 
 - Current Conditions Data : `NSDictionary`
 
-### `TKNotification` (WIP)
+### `TKNotification` [Complete]
 
 - Title : `NSString`
 - Subtitle : `NSString` (displays under)
 - Tag : `NSString` (displays over)
 - Activity Icon : `UIImage`
 - Image : `UIImage`
+- Timestamp : `NSDate`
 
 
 ## Open Source Components

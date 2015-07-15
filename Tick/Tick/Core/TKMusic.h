@@ -19,4 +19,7 @@
 
 @property (nonatomic, weak) id<TKMusicDelegate> delegate;
 
+- (void)startListening;
+- (void)stopListening;
+
 @end

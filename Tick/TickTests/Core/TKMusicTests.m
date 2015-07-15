@@ -10,8 +10,10 @@
 #import <XCTest/XCTest.h>
 
 #import "TKMusic.h"
+#import "TKNotification.h"
 
 @interface TKMusicTests : XCTestCase<TKMusicDelegate>
+
 @property (nonatomic, strong) XCTestExpectation *expectation;
 
 @end
@@ -33,16 +35,23 @@
     
     TKMusic *music = [[TKMusic alloc] init];
     [music setDelegate:self];
+    [music startListening];
     
-    [self waitForExpectationsWithTimeout:60.0 handler:^(NSError *error) {
-        if(error) {
-            XCTFail(@"Test complete");
-        }
-    }];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(musicDidUpdateWithNotification:) name:TKNotificationCoreNotification object:nil];
+    
+    [self waitForExpectationsWithTimeout:120.0 handler:nil];
 }
 
-- (void)musicDidUpdateWithNowPlayingInfo:(NSDictionary *)nowPlayingInfo {
-    NSLog(@"Now Playing: %@", nowPlayingInfo);
+#pragma mark - Notification
+
+- (void)musicDidUpdateWithNotification:(NSNotification *)notification {
+    NSLog(@"[Notification] Now Playing: %@", notification.userInfo[TKNotificationCoreNotificationUserInfoKey]);
+}
+
+#pragma mark - Delegate
+
+- (void)musicDidUpdateWithNowPlayingInfo:(MPMediaItem *)nowPlayingInfo {
+    NSLog(@"[Delegate] Now Playing: %@", nowPlayingInfo.title);
 }
 
 @end

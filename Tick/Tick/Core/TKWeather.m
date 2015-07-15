@@ -9,6 +9,7 @@
 #import "TKWeather.h"
 #import "TKWeatherCache.h"
 #import "TKWeatherQuartz.h"
+#import "TKNotification.h"
 
 @interface TKWeather ()
 

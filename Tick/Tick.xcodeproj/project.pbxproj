@@ -35,6 +35,8 @@
 		86DABEAC1B54D8A10012F1BE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DABEAB1B54D8A10012F1BE /* MediaPlayer.framework */; };
 		86DABEAF1B54D8B70012F1BE /* TKMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DABEAE1B54D8B70012F1BE /* TKMusic.m */; };
 		86DABEB11B54E5E40012F1BE /* TKMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DABEB01B54E5E40012F1BE /* TKMusicTests.m */; };
+		86DABEB81B55E30C0012F1BE /* TKNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DABEB71B55E30C0012F1BE /* TKNotification.m */; };
+		86DABEBD1B55EE2A0012F1BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86DABEBB1B55EE2A0012F1BE /* Localizable.strings */; };
 		86F515441B37CE8400D50B4D /* TKWeatherCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F515431B37CE8400D50B4D /* TKWeatherCache.m */; };
 		86F515481B37F3C900D50B4D /* TKWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F515471B37F3C900D50B4D /* TKWeatherTests.m */; };
 		86F515491B37F42400D50B4D /* TKWeatherCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F515431B37CE8400D50B4D /* TKWeatherCache.m */; };
@@ -93,6 +95,9 @@
 		86DABEAD1B54D8B70012F1BE /* TKMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKMusic.h; path = Core/TKMusic.h; sourceTree = "<group>"; };
 		86DABEAE1B54D8B70012F1BE /* TKMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKMusic.m; path = Core/TKMusic.m; sourceTree = "<group>"; };
 		86DABEB01B54E5E40012F1BE /* TKMusicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKMusicTests.m; path = Core/TKMusicTests.m; sourceTree = "<group>"; };
+		86DABEB61B55E30C0012F1BE /* TKNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKNotification.h; path = Core/TKNotification.h; sourceTree = "<group>"; };
+		86DABEB71B55E30C0012F1BE /* TKNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKNotification.m; path = Core/TKNotification.m; sourceTree = "<group>"; };
+		86DABEBC1B55EE2A0012F1BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		86F515421B37CE8400D50B4D /* TKWeatherCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKWeatherCache.h; path = Core/TKWeatherCache.h; sourceTree = "<group>"; };
 		86F515431B37CE8400D50B4D /* TKWeatherCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKWeatherCache.m; path = Core/TKWeatherCache.m; sourceTree = "<group>"; };
 		86F515471B37F3C900D50B4D /* TKWeatherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKWeatherTests.m; path = Core/TKWeatherTests.m; sourceTree = "<group>"; };
@@ -213,6 +218,7 @@
 		86D84CE71B35E23500C36B57 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				86DABEBB1B55EE2A0012F1BE /* Localizable.strings */,
 				8661007D1B352D63002653BD /* Images.xcassets */,
 			);
 			name = Assets;
@@ -221,16 +227,10 @@
 		86D84CE81B35E25F00C36B57 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				86D84CEA1B35E29F00C36B57 /* TKClockwork.h */,
-				86D84CEB1B35E29F00C36B57 /* TKClockwork.m */,
-				86D84CED1B35E2C500C36B57 /* TKClockworkStyle.h */,
-				86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */,
-				86D84CF01B35F82400C36B57 /* TKQuartz.h */,
-				86D84CF11B35F82400C36B57 /* TKQuartz.m */,
-				86D84CF41B3612D800C36B57 /* TKClockStore.h */,
-				86D84CF51B3612D800C36B57 /* TKClockStore.m */,
-				8638115F1B3758E300D88E75 /* TKClock.h */,
-				863811601B3758E300D88E75 /* TKClock.m */,
+				86DABEB51B55E2FC0012F1BE /* Notifications */,
+				86DABEB41B55E2F40012F1BE /* Clockwork */,
+				86DABEB31B55E2EE0012F1BE /* Quartz */,
+				86DABEB21B55E1C60012F1BE /* Clock */,
 				86DABEAA1B54D8040012F1BE /* Music */,
 				863811651B37839900D88E75 /* Weather */,
 				8638115E1B3758CD00D88E75 /* Utility */,
@@ -282,6 +282,46 @@
 				86DABEAE1B54D8B70012F1BE /* TKMusic.m */,
 			);
 			name = Music;
+			sourceTree = "<group>";
+		};
+		86DABEB21B55E1C60012F1BE /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				86D84CF41B3612D800C36B57 /* TKClockStore.h */,
+				86D84CF51B3612D800C36B57 /* TKClockStore.m */,
+				8638115F1B3758E300D88E75 /* TKClock.h */,
+				863811601B3758E300D88E75 /* TKClock.m */,
+			);
+			name = Clock;
+			sourceTree = "<group>";
+		};
+		86DABEB31B55E2EE0012F1BE /* Quartz */ = {
+			isa = PBXGroup;
+			children = (
+				86D84CF01B35F82400C36B57 /* TKQuartz.h */,
+				86D84CF11B35F82400C36B57 /* TKQuartz.m */,
+			);
+			name = Quartz;
+			sourceTree = "<group>";
+		};
+		86DABEB41B55E2F40012F1BE /* Clockwork */ = {
+			isa = PBXGroup;
+			children = (
+				86D84CEA1B35E29F00C36B57 /* TKClockwork.h */,
+				86D84CEB1B35E29F00C36B57 /* TKClockwork.m */,
+				86D84CED1B35E2C500C36B57 /* TKClockworkStyle.h */,
+				86D84CEE1B35E2C500C36B57 /* TKClockworkStyle.m */,
+			);
+			name = Clockwork;
+			sourceTree = "<group>";
+		};
+		86DABEB51B55E2FC0012F1BE /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				86DABEB61B55E30C0012F1BE /* TKNotification.h */,
+				86DABEB71B55E30C0012F1BE /* TKNotification.m */,
+			);
+			name = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +407,7 @@
 			files = (
 				86D84D031B362F4300C36B57 /* PrimaryLocationKeysDiskStore.plist in Resources */,
 				86D84D041B362F4300C36B57 /* PrimaryTimeZoneDiskStore.plist in Resources */,
+				86DABEBD1B55EE2A0012F1BE /* Localizable.strings in Resources */,
 				86D84D051B362F4300C36B57 /* SecondaryLocationDataDiskStore.plist in Resources */,
 				86D84D091B36480400C36B57 /* UnitedStatesStateLocalityMapping.plist in Resources */,
 				86D84D061B362F4300C36B57 /* SecondaryLocationKeysDiskStore.plist in Resources */,
@@ -393,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				866100791B352D63002653BD /* ViewController.m in Sources */,
+				86DABEB81B55E30C0012F1BE /* TKNotification.m in Sources */,
 				8638115D1B37567700D88E75 /* TKUserDefaults.m in Sources */,
 				86F515441B37CE8400D50B4D /* TKWeatherCache.m in Sources */,
 				86D84CF21B35F82400C36B57 /* TKQuartz.m in Sources */,
@@ -446,6 +488,14 @@
 				866100801B352D63002653BD /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		86DABEBB1B55EE2A0012F1BE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86DABEBC1B55EE2A0012F1BE /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
