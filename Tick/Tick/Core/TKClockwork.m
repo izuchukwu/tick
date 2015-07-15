@@ -13,6 +13,10 @@
 NSString *const TKClockworkStyleDidChangeNotification = @"TKClockworkStyleDidChangeNotification";
 NSString *const TKClockworkStyleDidChangeNotificationContents = @"contents";
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 #pragma mark - Styling
 
 - (void)restyleApplicationWithAuthenticatedObject:(NSObject<TKClockworkAuthority> *)authenticatedObject style:(TKClockworkStyle *)style {

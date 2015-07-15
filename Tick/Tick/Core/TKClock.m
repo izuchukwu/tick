@@ -8,10 +8,14 @@
 
 #import "TKClock.h"
 #import "TKQuartz.h"
+#import "TKWeatherCache.h"
 
 @interface TKClock ()
 
 @property (nonatomic, assign) NSTimeInterval reference;
+@property (nonatomic, strong) TKWeather *weather;
+
+@property (nonatomic, strong) NSString *storeIdentifier;
 
 @end
 
@@ -27,6 +31,10 @@
         _location = location;
         _timeZone = [NSTimeZone timeZoneWithName:timeZoneIdentifier];
         
+        _storeIdentifier = identifier;
+        
+        self.weather = [[TKWeather alloc] initWithLocation:_location locationIdentifier:_storeIdentifier delegate:self];
+        
         [self commonInit];
     }
     return self;
@@ -38,6 +46,8 @@
         _title = title;
         _subtitle = subtitle;
         _timeZone = [NSTimeZone timeZoneForSecondsFromGMT:UTCOffset];
+        
+        _storeIdentifier = identifier;
         
         [self commonInit];
     }
@@ -51,6 +61,16 @@
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - Weather
+
+- (void)didUpdateWeather {
+    [self.delegate weatherDidUpdate:self];
+}
+
+- (NSDictionary *)currentConditionsData {
+    return [self.weather currentConditions];
 }
 
 #pragma mark - Quartz
@@ -86,7 +106,7 @@
 }
 
 - (BOOL)isLocationAccurate {
-    return _location;
+    return (BOOL)_location;
 }
 
 #pragma mark - Copying

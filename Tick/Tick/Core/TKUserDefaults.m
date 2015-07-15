@@ -11,6 +11,7 @@
 @implementation TKUserDefaults
 
 NSString *const TKUserDefaultsKeyUserClockStore = @"TKUserDefaultsKeyUserClockStore";
+NSString *const TKUserDefaultsKeyUserWeatherIdentifierStore = @"TKUserDefaultsKeyUserWeatherIdentifierStore";
 
 + (void)objectForKey:(NSString *)key completion:(void (^)(id object))completion {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

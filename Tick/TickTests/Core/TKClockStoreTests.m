@@ -28,26 +28,26 @@
     [super tearDown];
 }
 
-- (void)testQuery {
-    NSString *query = @"toky";
-    XCTestExpectation *expectation = [self expectationWithDescription:@"Clock Store Query Test"];
-    
-    [self.clockStore queryPrimaryDiskStoresWithQuery:query completion:^(NSDictionary *results) {
-        NSLog(@"results for query \"%@\":\n%@", query, results);
-        
-        if (results) {
-            [expectation fulfill];
-        }
-    }];
-    
-    [self waitForExpectationsWithTimeout:5.0 handler:^(NSError *error) {
-        if(error) {
-            XCTFail(@"Expectation Failed with error: %@", error);
-        }
-    }];
-    
-    //XCTAssert(YES, @"Pass");
-}
+//- (void)testQuery {
+//    NSString *query = @"toky";
+//    XCTestExpectation *expectation = [self expectationWithDescription:@"Clock Store Query Test"];
+//    
+//    [self.clockStore queryPrimaryDiskStoresWithQuery:query completion:^(NSDictionary *results) {
+//        NSLog(@"results for query \"%@\":\n%@", query, results);
+//        
+//        if (results) {
+//            [expectation fulfill];
+//        }
+//    }];
+//    
+//    [self waitForExpectationsWithTimeout:5.0 handler:^(NSError *error) {
+//        if(error) {
+//            XCTFail(@"Expectation Failed with error: %@", error);
+//        }
+//    }];
+//    
+//    //XCTAssert(YES, @"Pass");
+//}
 
 //- (void)testPerformanceExample {
 //    // This is an example of a performance test case.

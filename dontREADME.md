@@ -36,3 +36,14 @@ Time Zone [Seondary]: TZ2-xxxx
 ## Pending Core Refactors
 
 - All hard-coded `NSStrings` to `const`, esp `NSDictionary` keys & `TKClockStore` identifier prefixes
+- Add OpenWeatherMap API Key to `initialize` in `TKWeatherCache`
+
+## TKWeather
+
+- Update current conditions based on lat/lon when clock is added & store ID
+ - Lacks cache check (all requests remote)
+ - Once per clock, cached by ID // not enforced
+- Update batch current conditions by IDs every 15m
+ - Results cached by ID for 15m // enforced by TKWeatherCache
+- Update 3h forecast by ID on-demand per clock
+ - Results cached by ID for 30m // enforced by TKWeatherCache

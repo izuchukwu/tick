@@ -3,8 +3,8 @@ A different kind of clock. News, meetings, & world time while you work or play.
 
 ## View Structure
 `TKTickViewController` : `UICollectionViewController<TKClockworkStyleable>` (vertical)
-- `TKUpdateViewController` : `UICollectionViewController<TKClockworkStyleable>` (horizontal)
- - `TKUpdateView` : `UIView<TKClockworkStyleable>`
+- `TKNotificationViewController` : `UICollectionViewController<TKClockworkStyleable>` (horizontal)
+ - `TKNotificationView` : `UIView<TKClockworkStyleable>`
 - `TKClockViewController` : `UICollectionViewController<TKClockworkStyleable>` (horizontal)
  - `TKClocksView` : `UIView<TKClockworkStyleable>`
  - `TKClockView` : `UIView<TKClockworkStyleable>`
@@ -17,20 +17,34 @@ A different kind of clock. News, meetings, & world time while you work or play.
 Styling manager dependency-injected into every custom view.
 
 - Defines `@protocol TKClockworkStyleable`
+- Defines `@protocol TKClockworkAuthority`
 
 ### `TKQuartz` [Complete]
 Single NSTimer broadcasting to all time-interval-watching objects app-wide, notifying them to update their timekeeping.
 
 ### `TKClockStore` [Complete]
 Queryable database of all clocks & time zones, plus user's selected clocks, dependency-injected where necessary.
-- *To add method* `addClockToUserStore:`, `TKClock` *must be implemented*
 
 ### `TKClock` [Complete]
 - Represents a single clock object
 - Given by TKClockStore and consumed by TKClockView
+- Defines `@protocol TKTimepiece`
+- Special parameters for local (GPS) clock
 
 ### `TKUserDefaults` [Complete]
 Serves as a class-method-based, block-based background thread wrapper for NSUserDefaults calls. Defines global defaults constants as well.
+
+### `TKWeather` [Hold: `TKNotification`]
+Fetches & stores conditions for a given clock (location-based only). Location API to be decided. If clock is the local clock, broadcasts internal notifications when weather changes.
+
+### `TKWeatherCache` [Complete]
+Stores location ID to weather ID mappings retreived from weather data source, as well as manages network retreival & caching of weather data fetches.
+
+### `TKMusic` [Hold: `TKNotification`]
+Listens for track change notifications to system's music player & re-broadcasts as internal notifications.
+
+### `TKNotification` (WIP)
+Has `const` key for internal notifications and also defines the internal notification payload structure.
 
 
 ## Custom Object Structure
@@ -46,14 +60,20 @@ Serves as a class-method-based, block-based background thread wrapper for NSUser
 
 - Clock Title : `NSString`
 - Time Zone : `NSTimeZone`
-- Location : `CLLocation`
-- Weather : `TKWeather`
+- Location : `CLLocation` (auto-approximated for non-location-based clocks)
+- Weather : `TKWeather` (only available for location-based clocks)
 
-### `TKWeather` (WIP)
+### `TKWeather` [Complete]
 
-- Current Conditions Title : `NSString`
-- Current Conditions Temperature : `NSNumber` (int)
-- Current Conditions Icon : `UIImage`
+- Current Conditions Data : `NSDictionary`
+
+### `TKNotification` (WIP)
+
+- Title : `NSString`
+- Subtitle : `NSString` (displays under)
+- Tag : `NSString` (displays over)
+- Activity Icon : `UIImage`
+- Image : `UIImage`
 
 
 ## Open Source Components
@@ -78,3 +98,26 @@ Used to map US 2-letter state codes to full state names.
 
 Developed by [Norman Harebottle III](https://github.com/normanhh3/US-State-Abbreviations). [(License, MIT)](https://github.com/normanhh3/US-State-Abbreviations/blob/master/LICENSE)
 
+
+## Open Source Data
+
+### GeoNames [Added]
+The data source behind Tick's offline location database.
+
+A project of [Unxos GmbH, Switzerland](http://www.geonames.org). [License, CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+
+### Wikipedia [Added]
+The data source behind Tick's offline time zone database.
+
+Civilian time zones sourced from [Wikipedia — List of Time Zone Abbreviations](https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations).
+Military time zones sourced from [Wikipedia — List of Military Time Zones](https://en.wikipedia.org/wiki/List_of_military_time_zones).
+
+A project supported by the [Wikimedia Foundation](https://en.wikipedia.org/wiki/Main_Page). [License, CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+
+
+## APIs
+
+### OpenWeatherMap [To Be Added, API]
+The data API behind Tick's weather conditions & forecasting.
+
+A service of [OpenWeatherMap Inc.](http://openweathermap.org). [License, CC-BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)

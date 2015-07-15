@@ -10,6 +10,7 @@
 		8638115D1B37567700D88E75 /* TKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638115C1B37567700D88E75 /* TKUserDefaults.m */; };
 		863811611B3758E300D88E75 /* TKClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 863811601B3758E300D88E75 /* TKClock.m */; };
 		863811641B37597B00D88E75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863811631B37597B00D88E75 /* CoreLocation.framework */; };
+		863811681B3783C200D88E75 /* TKWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 863811671B3783C200D88E75 /* TKWeather.m */; };
 		866100731B352D63002653BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100721B352D63002653BD /* main.m */; };
 		866100761B352D63002653BD /* TKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100751B352D63002653BD /* TKAppDelegate.m */; };
 		866100791B352D63002653BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866100781B352D63002653BD /* ViewController.m */; };
@@ -30,6 +31,13 @@
 		86D84D061B362F4300C36B57 /* SecondaryLocationKeysDiskStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D84D001B362F4300C36B57 /* SecondaryLocationKeysDiskStore.plist */; };
 		86D84D071B362F4300C36B57 /* SecondaryTimeZoneDiskStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D84D011B362F4300C36B57 /* SecondaryTimeZoneDiskStore.plist */; };
 		86D84D091B36480400C36B57 /* UnitedStatesStateLocalityMapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D84D081B36480400C36B57 /* UnitedStatesStateLocalityMapping.plist */; };
+		86DABEA91B538E720012F1BE /* TKWeatherQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DABEA81B538E720012F1BE /* TKWeatherQuartz.m */; };
+		86DABEAC1B54D8A10012F1BE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DABEAB1B54D8A10012F1BE /* MediaPlayer.framework */; };
+		86DABEAF1B54D8B70012F1BE /* TKMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DABEAE1B54D8B70012F1BE /* TKMusic.m */; };
+		86DABEB11B54E5E40012F1BE /* TKMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DABEB01B54E5E40012F1BE /* TKMusicTests.m */; };
+		86F515441B37CE8400D50B4D /* TKWeatherCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F515431B37CE8400D50B4D /* TKWeatherCache.m */; };
+		86F515481B37F3C900D50B4D /* TKWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F515471B37F3C900D50B4D /* TKWeatherTests.m */; };
+		86F515491B37F42400D50B4D /* TKWeatherCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F515431B37CE8400D50B4D /* TKWeatherCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,8 @@
 		8638115F1B3758E300D88E75 /* TKClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKClock.h; path = Core/TKClock.h; sourceTree = "<group>"; };
 		863811601B3758E300D88E75 /* TKClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKClock.m; path = Core/TKClock.m; sourceTree = "<group>"; };
 		863811631B37597B00D88E75 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		863811661B3783C200D88E75 /* TKWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKWeather.h; path = Core/TKWeather.h; sourceTree = "<group>"; };
+		863811671B3783C200D88E75 /* TKWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKWeather.m; path = Core/TKWeather.m; sourceTree = "<group>"; };
 		8661006D1B352D63002653BD /* Tick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		866100711B352D63002653BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		866100721B352D63002653BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,6 +87,15 @@
 		86D84D001B362F4300C36B57 /* SecondaryLocationKeysDiskStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SecondaryLocationKeysDiskStore.plist; sourceTree = "<group>"; };
 		86D84D011B362F4300C36B57 /* SecondaryTimeZoneDiskStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SecondaryTimeZoneDiskStore.plist; sourceTree = "<group>"; };
 		86D84D081B36480400C36B57 /* UnitedStatesStateLocalityMapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UnitedStatesStateLocalityMapping.plist; sourceTree = "<group>"; };
+		86DABEA71B538E720012F1BE /* TKWeatherQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKWeatherQuartz.h; path = Core/TKWeatherQuartz.h; sourceTree = "<group>"; };
+		86DABEA81B538E720012F1BE /* TKWeatherQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKWeatherQuartz.m; path = Core/TKWeatherQuartz.m; sourceTree = "<group>"; };
+		86DABEAB1B54D8A10012F1BE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		86DABEAD1B54D8B70012F1BE /* TKMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKMusic.h; path = Core/TKMusic.h; sourceTree = "<group>"; };
+		86DABEAE1B54D8B70012F1BE /* TKMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKMusic.m; path = Core/TKMusic.m; sourceTree = "<group>"; };
+		86DABEB01B54E5E40012F1BE /* TKMusicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKMusicTests.m; path = Core/TKMusicTests.m; sourceTree = "<group>"; };
+		86F515421B37CE8400D50B4D /* TKWeatherCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKWeatherCache.h; path = Core/TKWeatherCache.h; sourceTree = "<group>"; };
+		86F515431B37CE8400D50B4D /* TKWeatherCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKWeatherCache.m; path = Core/TKWeatherCache.m; sourceTree = "<group>"; };
+		86F515471B37F3C900D50B4D /* TKWeatherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKWeatherTests.m; path = Core/TKWeatherTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DABEAC1B54D8A10012F1BE /* MediaPlayer.framework in Frameworks */,
 				863811641B37597B00D88E75 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,9 +130,23 @@
 		863811621B37596800D88E75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86DABEAB1B54D8A10012F1BE /* MediaPlayer.framework */,
 				863811631B37597B00D88E75 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		863811651B37839900D88E75 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				863811661B3783C200D88E75 /* TKWeather.h */,
+				863811671B3783C200D88E75 /* TKWeather.m */,
+				86F515421B37CE8400D50B4D /* TKWeatherCache.h */,
+				86F515431B37CE8400D50B4D /* TKWeatherCache.m */,
+				86DABEA71B538E720012F1BE /* TKWeatherQuartz.h */,
+				86DABEA81B538E720012F1BE /* TKWeatherQuartz.m */,
+			);
+			name = Weather;
 			sourceTree = "<group>";
 		};
 		866100641B352D63002653BD = {
@@ -197,6 +231,8 @@
 				86D84CF51B3612D800C36B57 /* TKClockStore.m */,
 				8638115F1B3758E300D88E75 /* TKClock.h */,
 				863811601B3758E300D88E75 /* TKClock.m */,
+				86DABEAA1B54D8040012F1BE /* Music */,
+				863811651B37839900D88E75 /* Weather */,
 				8638115E1B3758CD00D88E75 /* Utility */,
 				86D84CFB1B362F4300C36B57 /* Data */,
 			);
@@ -218,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				86D84CF71B362B0F00C36B57 /* TKClockStoreTests.m */,
+				86F515471B37F3C900D50B4D /* TKWeatherTests.m */,
+				86DABEB01B54E5E40012F1BE /* TKMusicTests.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -235,6 +273,15 @@
 			);
 			name = Data;
 			path = Core/Data;
+			sourceTree = "<group>";
+		};
+		86DABEAA1B54D8040012F1BE /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				86DABEAD1B54D8B70012F1BE /* TKMusic.h */,
+				86DABEAE1B54D8B70012F1BE /* TKMusic.m */,
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,13 +394,17 @@
 			files = (
 				866100791B352D63002653BD /* ViewController.m in Sources */,
 				8638115D1B37567700D88E75 /* TKUserDefaults.m in Sources */,
+				86F515441B37CE8400D50B4D /* TKWeatherCache.m in Sources */,
 				86D84CF21B35F82400C36B57 /* TKQuartz.m in Sources */,
 				866100761B352D63002653BD /* TKAppDelegate.m in Sources */,
 				863811611B3758E300D88E75 /* TKClock.m in Sources */,
+				86DABEA91B538E720012F1BE /* TKWeatherQuartz.m in Sources */,
 				86D84CEC1B35E29F00C36B57 /* TKClockwork.m in Sources */,
 				86D84CF61B3612D800C36B57 /* TKClockStore.m in Sources */,
+				863811681B3783C200D88E75 /* TKWeather.m in Sources */,
 				866100731B352D63002653BD /* main.m in Sources */,
 				86D84CEF1B35E2C500C36B57 /* TKClockworkStyle.m in Sources */,
+				86DABEAF1B54D8B70012F1BE /* TKMusic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +412,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F515491B37F42400D50B4D /* TKWeatherCache.m in Sources */,
 				86D84CFA1B362C6F00C36B57 /* TKClockStore.m in Sources */,
+				86DABEB11B54E5E40012F1BE /* TKMusicTests.m in Sources */,
+				86F515481B37F3C900D50B4D /* TKWeatherTests.m in Sources */,
 				8661008D1B352D63002653BD /* TickTests.m in Sources */,
 				86D84CF81B362B0F00C36B57 /* TKClockStoreTests.m in Sources */,
 			);
